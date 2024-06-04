@@ -1,5 +1,5 @@
-# MDPH2_on_UR10e
-MDPH2_on_UR10e
+# MDPH2 on UR10e
+MDPH2 on UR10e
 
 Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
