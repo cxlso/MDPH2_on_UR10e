@@ -13,3 +13,4 @@ This work is licensed under a
 [cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
 
 ![MDPH2_on_UR10e_Wire_Diagram](Assets/MDPH2_on_UR10e_Wire_Diagram.svg)
+Diagram made with the open-source tool [Fritzing](https://fritzing.org/).
