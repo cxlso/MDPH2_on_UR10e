@@ -102,4 +102,4 @@ This work is licensed under a
 
 ## Acknowledgements
 
-Special thanks to the teams and communities behind Rhino Grasshopper, Arduino, and Universal Robots for their support and resources.
+Special thanks to [Luigi Pacheco](https://luigipacheco.com/) and [Bhavleen Kaur](https://bhavleenkaurnarula.wordpress.com/) from the [FIU RDFlab](https://rdflabfiu.github.io/labwiki/) for the tips.
