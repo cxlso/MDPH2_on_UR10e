@@ -79,7 +79,9 @@ The mass and center of gravity can be found in the Grasshopper script. These set
 
 https://github.com/cxlso/MDPH2_on_UR10e/assets/29285706/ac5a9cc8-03f6-4395-85b4-7b0d291706e9
 
-<img src="https://github.com/cxlso/MDPH2_on_UR10e/assets/29285706/effd8bc1-c4e3-410f-8999-9d7a34db1e4b" width="23%"></img> <img src="https://github.com/cxlso/MDPH2_on_UR10e/assets/29285706/a2818543-1c64-4062-9cc6-14fa658f7270" width="23%"></img> <img src="https://github.com/cxlso/MDPH2_on_UR10e/assets/29285706/daca66d9-8102-4669-9728-286e8a8b9e8d" width="23%"></img> <img src="https://github.com/cxlso/MDPH2_on_UR10e/assets/29285706/bd144e61-af86-4097-93f5-d0e02794067f" width="23%"></img> 
+https://github.com/cxlso/MDPH2_on_UR10e/assets/29285706/749127e9-4e9b-446a-b5af-80f2f0c1dffd
+
+<img src="https://github.com/cxlso/MDPH2_on_UR10e/assets/29285706/128c2434-52cd-4ef8-8e8a-50a991110c6a" width="30%"></img> <img src="https://github.com/cxlso/MDPH2_on_UR10e/assets/29285706/effd8bc1-c4e3-410f-8999-9d7a34db1e4b" width="30%"></img> <img src="https://github.com/cxlso/MDPH2_on_UR10e/assets/29285706/a2818543-1c64-4062-9cc6-14fa658f7270" width="30%"></img> <img src="https://github.com/cxlso/MDPH2_on_UR10e/assets/29285706/daca66d9-8102-4669-9728-286e8a8b9e8d" width="30%"></img> <img src="https://github.com/cxlso/MDPH2_on_UR10e/assets/29285706/bd144e61-af86-4097-93f5-d0e02794067f" width="30%"></img> 
 
 ## Contributing
 
