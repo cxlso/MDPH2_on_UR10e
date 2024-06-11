@@ -1,8 +1,9 @@
 # MDPH2 on UR10e
-###### A controller box and mounts to get started with the WASP Clay Kit on UR10e
+###### A controller box and mounts to get started with the Massive Dimension thermoplastic extruder MDPH2 on UR10e
 
 ## Overview
-This repository contains everyting needed to get started with robotic clay printing with the [WASP Clay Kit](https://www.3dwasp.shop/en/prodotto/clay-extruder-wasp-clay-kit/) and the [Universal Robot UR10e](https://www.universal-robots.com/products/ur10-robot/) (or any UR model).
+This repository contains everyting needed to get started with robotic thermoplastic printing with the [MDPH2 from Massive Dimension](https://massivedimension.com/products/mdphe-v1-pellet-head-extruder-system) and the [Universal Robot UR10e](https://www.universal-robots.com/products/ur10-robot/) (or any UR model capable of handeling the weight).
+
 Included in the repository are:
 
 - Controller Box CAD Files: For 3D printing the structure and laser cutting the acrylic walls of the controller box,
@@ -11,16 +12,21 @@ Included in the repository are:
 
 ## Note on the Signal Workflow
 
-The workflow begins with the Grasshopper script embedding the extrusion commands (rate and direction) into the URP file. This file instructs the UR10e to output two analog voltage signals (0-5V) on AO0 (Pul) and AO1 (Dir). These signals are read by the Arduino on pins A0 (Pul) and A1 (Dir), which translates them into digital signals on pins D2 (Pul) and D3 (Dir) for the stepper motor driver, ultimately driving the WASP extruder's stepper motor.
+The workflow begins with the Grasshopper script embedding the extrusion commands (rate and direction) into the URP file. This file instructs the UR10e to output two analog voltage signals (0-5V) on AO0 (Pul) and AO1 (Dir). These signals are read by the Arduino on pins A0 (Pul) and A1 (Dir), which translates them into digital signals on pins D2 (Pul) and D3 (Dir) for the ClearPath servo motor of the MDPH2.
 
-**Grasshopper (Extrusion Command Embeded in URP file/G-Code ) ⟶ UR10e (Analog Output 0-5V) ⟶ Arduino (Analog Input) ⟶ Stepper Motor Driver (Digital Signal) ⟶ WASP Extruder's Stepper Motor**
+**Grasshopper (Extrusion Command Embeded in URP file/G-Code ) ⟶ UR10e (Analog Output 0-5V) ⟶ Arduino (Analog Input) ⟶ MDPH2's Servo Motor (Digital Signal)**
+
+Note: The temperature is not controlled by the Grasshopper script. The temperature must be set manually on the PID controller. Allow the extruder to warm up to the desired temperature before starting extrusion to prevent motor damage due to high torque.  
+For PLA, we set the temperature to 190°C. It is recommended to stay on the lower end of the melting temperature spectrum to maintain high viscosity, reduce stringing, and minimize cooling time.
 
 ## Components
 
 - Arduino Nano
-- TM6600 Stepper Motor Driver
 - LM2596 Stepdown reducer 24v to 12v
 - Rocker Switch
+- Inkbird ITC-100 PID Temperature Controller (comes with the MDPH2)
+- IPC-5 75v Power Supply (comes with the MDPH2)
+- Solid State Relay (comes with the MDPH2)
 - 24v Power Supply
 - M3 and M4 Hex Socket Head Screws
 - 3mm Acrylic Sheet
@@ -28,31 +34,26 @@ The workflow begins with the Grasshopper script embedding the extrusion commands
 - 18 and 24awg cables 
 
 ## Setup and Installation
+
 ### Prerequisites
 
 - UR10e Robotic Arm (or any UR models),
-- WASP Clay kit (WASP LDM Extruder 3.0, Clay Tank),
+- Massive Dimension MDPH2 Thermoplastic extruder,
 - Rhino Grasshopper: For generating toolpath commands.
 
 ### Wiring Diagram
 
 Refer to the following wiring diagram for the electrical connections.
 
-![MDPH2_on_UR10e_Wire_Diagram](Assets/MDPH2_on_UR10e_Wire_Diagram.svg)
+![MDPH2_on_UR10e_Wire_Diagram](Controller_Box/Wiring_Diagram/MDPH2_on_UR10e_Wire_Diagram.svg)
 Diagram made with the open-source tool [Fritzing](https://fritzing.org/).
 
-### CAD Files
+### Controller Box and Mount CAD Files
 
-#### Controller Box
-
+- MDPH2 Extruder Mount 3D printing file,
 - Structure 3D printing file. Skeleton inside de box holding all the components in place,
 - Corner brackets 3D printing file,
 - 3MM acrylic wall Laser cutting file.
-
-#### Mounts
-- WASP LDM Extruder 3.0 Mount 3D printing file,
-- Clay Tank Mount 3D printing file,
-- Pressure Gauge Mount 3D printing file.
 
 ### Scripts
 
@@ -66,6 +67,7 @@ The [Robots](https://www.food4rhino.com/en/app/robots) plugin is necessary. The 
 $$y = \left( \frac{x \times 800}{60} \right)$$
 Where 800 represents the number of steps per revolution for the stepper motor, and 60 is used to convert minutes to seconds, resulting in the conversion of RPM (x) to steps per second (y).
 
+The actual RPM can be checked through [ClearPath](https://www.teknic.com/files/downloads/motor_setup.zip) MSP via the micro USB cable on top of the servo motor.
 
 ## Contributing
 
