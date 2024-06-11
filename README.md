@@ -16,7 +16,7 @@ The workflow begins with the Grasshopper script embedding the extrusion commands
 
 **Grasshopper (Extrusion Command Embeded in URP file/G-Code ) ⟶ UR10e (Analog Output 0-5V) ⟶ Arduino (Analog Input) ⟶ MDPH2's Servo Motor (Digital Signal)**
 
-Note: The temperature is not controlled by the Grasshopper script. The temperature must be set manually on the PID controller. Allow the extruder to warm up to the desired temperature before starting extrusion to prevent motor damage due to high torque.  
+**Note:** The temperature is not controlled by the Grasshopper script. The temperature must be set manually on the PID controller. Allow the extruder to warm up to the desired temperature before starting extrusion to prevent motor damage due to high torque.  
 For PLA, we set the temperature to 190°C. It is recommended to stay on the lower end of the melting temperature spectrum to maintain high viscosity, reduce stringing, and minimize cooling time.
 
 ## Components
