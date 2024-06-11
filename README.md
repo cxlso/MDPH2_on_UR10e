@@ -75,6 +75,12 @@ The actual RPM can be checked through [ClearPath MSP](https://www.teknic.com/fil
 
 The mass and center of gravity can be found in the Grasshopper script. These settings are very important for this extruder as it is reaching the load capacity of the UR10e. 
 
+## Photos and Videos
+
+https://github.com/cxlso/MDPH2_on_UR10e/assets/29285706/ac5a9cc8-03f6-4395-85b4-7b0d291706e9
+
+<img src="https://github.com/cxlso/MDPH2_on_UR10e/assets/29285706/effd8bc1-c4e3-410f-8999-9d7a34db1e4b" width="23%"></img> <img src="https://github.com/cxlso/MDPH2_on_UR10e/assets/29285706/a2818543-1c64-4062-9cc6-14fa658f7270" width="23%"></img> <img src="https://github.com/cxlso/MDPH2_on_UR10e/assets/29285706/daca66d9-8102-4669-9728-286e8a8b9e8d" width="23%"></img> <img src="https://github.com/cxlso/MDPH2_on_UR10e/assets/29285706/bd144e61-af86-4097-93f5-d0e02794067f" width="23%"></img> 
+
 ## Contributing
 
 Contributions are welcome! Please submit a pull request or open an issue to discuss any changes or improvements.
