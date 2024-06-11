@@ -50,18 +50,18 @@ Diagram made with the open-source tool [Fritzing](https://fritzing.org/).
 
 ### Controller Box and Mount CAD Files
 
-- MDPH2 Extruder Mount 3D printing file,
-- Structure 3D printing file. Skeleton inside de box holding all the components in place,
-- Corner brackets 3D printing file,
-- 3MM acrylic wall Laser cutting file.
+- [MDPH2 Extruder Mount](Mount/Print_MD_Extruder_Mount.stl) 3D printing file,
+- [Structure](Controller_Box/CAD/Print_MD_Skeleton.stl) 3D printing file. Skeleton inside de box holding all the components in place,
+- [Corner brackets](Controller_Box/CAD/Print_MD_Corner_Bracket.stl) 3D printing file,
+- [3MM acrylic wall](Controller_Box/CAD/Cut_MD_3MM_Walls.AI) Laser cutting file.
 
 ### Scripts
 
-#### Arduino Script: 
+#### [Arduino Script](Arduino/Stepper_PulseDir_MD)
 
-Upload the provided code (WASP_Extruder_Controller.ino) to the Arduino Nano. Ensure all connections are made according to the wiring diagram.
+Upload the provided code to the Arduino Nano. Ensure all connections are made according to the wiring diagram.
 
-#### Grasshopper Definition
+#### [Grasshopper Definition](Grasshopper/Basic_Robotic_Extrusion_MDPH2.gh)
 
 The [Robots](https://www.food4rhino.com/en/app/robots) plugin is necessary. The extrusion rate is set in RPM and is converted to steps per second with the following equation:
 $$y = \left( \frac{x \times 800}{60} \right)$$
