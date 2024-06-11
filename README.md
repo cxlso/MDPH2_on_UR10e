@@ -71,6 +71,8 @@ Where 800 represents the number of steps per revolution for the stepper motor, a
 
 The actual RPM can be checked through [ClearPath](https://www.teknic.com/files/downloads/motor_setup.zip) MSP via the micro USB cable on top of the servo motor.
 
+The mass and center of gravity can be found in the Grasshopper script. These settings are very important for this extruder as it is reaching the load capacity of the UR10e. 
+
 ## Contributing
 
 Contributions are welcome! Please submit a pull request or open an issue to discuss any changes or improvements.
