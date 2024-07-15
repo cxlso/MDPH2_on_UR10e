@@ -103,3 +103,5 @@ This work is licensed under a
 ## Acknowledgements
 
 Special thanks to [Luigi Pacheco](https://luigipacheco.com/) and [Bhavleen Kaur](https://bhavleenkaurnarula.wordpress.com/) from the [FIU RDFlab](https://rdflabfiu.github.io/labwiki/) for the tips.
+
+This project was developed on my own initiative at the [School of Architecture of Florida Atlantic University](https://www.fau.edu/artsandletters/architecture/) within the Environmental Design and Natural Materials lab, directed by Shermeen Yousif.
