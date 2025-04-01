@@ -9,7 +9,8 @@ This repository contains everyting needed to get started with robotic thermoplas
 Included in the repository are:
 
 - Controller Box CAD Files: For 3D printing the structure and laser cutting the acrylic walls of the controller box,
-- Mounts CAD Files: For 3d printing mounts to secure the clay tank, extruder, and pressure gauge,
+- Controller Box Wiring Diagram: For wiring the electronic componenent of the controller box.
+- Mounts CAD File: For 3d printing mounts to secure the extruder,
 - Scripts: Arduino code for the controller and Grasshopper toolpath example.
 
 ## Note on the Signal Workflow
